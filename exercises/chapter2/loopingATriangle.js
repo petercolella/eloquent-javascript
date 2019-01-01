@@ -5,6 +5,6 @@
 //     console.log(level);
 // }
 
-for (let level = ''; level.length <= 7; level += '#') {
+for (let level = '#'; level.length <= 7; level += '#') {
   console.log(level);
 }

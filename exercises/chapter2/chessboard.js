@@ -43,4 +43,21 @@ const chessboard1 = function(size) {
   return board;
 };
 
-console.log(chessboard1(5));
+console.log(chessboard1(8));
+
+const chessboard2 = function(size) {
+  let board = '';
+  for (let row = 0; row < size; row++) {
+    for (let col = 0; col < size; col++) {
+      if ((row + col) % 2 === 0) {
+        board += ' ';
+      } else {
+        board += '#';
+      }
+    }
+    board += '\n';
+  }
+  return board;
+};
+
+console.log(chessboard2(8));
